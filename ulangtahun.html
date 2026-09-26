@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Mbak Anis 🎂</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 550px;
+            text-align: center;
+            padding: 35px 25px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            animation: muncul 1.5s ease;
+            z-index: 2;
+        }
+
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .emoji {
+            font-size: 70px;
+            animation: goyang 2s infinite;
+        }
+
+        @keyframes goyang {
+            0%, 100% {
+                transform: rotate(-5deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+        }
+
+        h1 {
+            margin: 15px 0;
+            font-size: 32px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #fff8dc;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #e75480;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: #ffe4ec;
+        }
+
+        /* BAGIAN KEJUTAN */
+        #pesan {
+            display: none;
+            margin-top: 25px;
+            animation: munculPesan 1s ease;
+        }
+
+        @keyframes munculPesan {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* VIDEO */
+        .video-section {
+            display: none;
+            margin-top: 35px;
+            animation: munculPesan 1.5s ease;
+        }
+
+        .video-section h2 {
+            margin-bottom: 15px;
+        }
+
+        video {
+            width: 100%;
+            max-height: 400px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background: black;
+        }
+
+        /* FOTO */
+        .foto-section {
+            display: none;
+            margin-top: 40px;
+            animation: fotoMuncul 2s ease;
+        }
+
+        @keyframes fotoMuncul {
+            from {
+                opacity: 0;
+                transform: scale(0.5) rotate(-5deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(0);
+            }
+        }
+
+        .foto-section h2 {
+            margin-bottom: 15px;
+        }
+
+        .foto {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        }
+
+        .caption {
+            margin-top: 15px;
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        /* HATI */
+        .heart {
+            position: fixed;
+            bottom: -50px;
+            font-size: 25px;
+            animation: naik 6s linear infinite;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        @keyframes naik {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        /* CONFETTI */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -20px;
+            z-index: 10;
+            animation: jatuh 4s linear forwards;
+        }
+
+        @keyframes jatuh {
+            to {
+                transform: translateY(110vh) rotate(720deg);
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HATI BERGERAK -->
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:2s;">💖</div>
+    <div class="heart" style="left:45%; animation-delay:1s;">💕</div>
+    <div class="heart" style="left:65%; animation-delay:3s;">💗</div>
+    <div class="heart" style="left:85%; animation-delay:1.5s;">❤️</div>
+
+
+    <div class="container">
+
+        <!-- PEMBUKA -->
+        <div class="emoji">🎂</div>
+
+        <h1>Happy Birthday! 🎉</h1>
+
+        <!-- GANTI NAMA KAKAK -->
+        <h2>Untuk Mbak Tersayang ❤️</h2>
+
+        <p>
+            Selamat ulang tahun, Mbak! 🥳
+        </p>
+
+        <p>
+            Semoga di umur yang baru ini, Mbak selalu diberikan
+            kesehatan, kebahagiaan, rezeki yang melimpah,
+            dan semua impian yang sedang diperjuangkan
+            bisa tercapai. ✨
+        </p>
+
+
+        <!-- TOMBOL KEJUTAN -->
+        <button onclick="kejutan()">
+            🎁 Buka Kejutan 😘
+        </button>
+
+
+        <!-- PESAN SETELAH TOMBOL -->
+        <div id="pesan">
+
+            <p>
+                Terima kasih sudah menjadi Mbak yang selalu
+                memberikan banyak cerita, bantuan, dan kenangan. ❤️
+            </p>
+
+            <p>
+                Jangan lupa bahagia, jangan terlalu banyak pikiran,
+                dan tetap jadi Mbak yang hebat! 😄
+            </p>
+
+            <h2>
+                🎉 HAPPY BIRTHDAY Mbak! 🎉
+            </h2>
+
+            <p>
+                Semoga tahun ini menjadi salah satu tahun
+                terbaik dalam hidup Mbak! 💐
+            </p>
+
+        </div>
+
+
+        <!-- VIDEO -->
+        <div class="video-section" id="videoSection">
+
+            <h2>🎥 Ada Video Untuk Mbak</h2>
+
+            <p>
+                Tonton sampai selesai ya! ❤️
+            </p>
+
+            <!-- GANTI NAMA FILE VIDEO DI SINI -->
+            <video id="video" controls>
+                <source src="video.mp4" type="video/mp4">
+
+                Browser kamu tidak mendukung video.
+            </video>
+
+        </div>
+
+
+        <!-- FOTO TERAKHIR -->
+        <div class="foto-section" id="fotoSection">
+
+            <h2>📸 Kenangan Terakhir</h2>
+
+            <!-- GANTI NAMA FILE FOTO DI SINI -->
+            <img
+                src="foto-kakak.jpg"
+                alt="Foto Kakak"
+                class="foto"
+            >
+
+            <p class="caption">
+                "Semoga selalu bahagia dan semua impian Mbak
+                bisa menjadi kenyataan. ❤️"
+            </p>
+
+            <h2>
+                🎂 Happy Birthday, Mbak! ❤️
+            </h2>
+
+        </div>
+
+
+        <div class="footer">
+            Dibuat dengan ❤️ khusus untuk Mbak
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function kejutan() {
+
+            // Menampilkan pesan
+            document.getElementById("pesan").style.display = "block";
+
+            // Menampilkan video
+            document.getElementById("videoSection").style.display = "block";
+
+            // Scroll perlahan menuju video
+            setTimeout(function() {
+
+                document.getElementById("videoSection")
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+            }, 500);
+
+
+            // Membuat konfeti
+            for (let i = 0; i < 100; i++) {
+
+                let confetti = document.createElement("div");
+
+                confetti.classList.add("confetti");
+
+                confetti.style.left =
+                    Math.random() * 100 + "vw";
+
+                confetti.style.backgroundColor =
+                    "hsl(" +
+                    Math.random() * 360 +
+                    ", 100%, 60%)";
+
+                confetti.style.animationDuration =
+                    (Math.random() * 3 + 2) + "s";
+
+                confetti.style.transform =
+                    "rotate(" +
+                    Math.random() * 360 +
+                    "deg)";
+
+                document.body.appendChild(confetti);
+
+                setTimeout(function() {
+
+                    confetti.remove();
+
+                }, 5000);
+
+            }
+
+        }
+
+
+        // FOTO MUNCUL SETELAH VIDEO SELESAI
+        document.getElementById("video").addEventListener(
+            "ended",
+            function() {
+
+                document.getElementById("fotoSection").style.display =
+                    "block";
+
+                setTimeout(function() {
+
+                    document.getElementById("fotoSection")
+                        .scrollIntoView({
+                            behavior: "smooth"
+                        });
+
+                }, 500);
+
+            }
+        );
+
+    </script>
+
+</body>
+</html>
+
